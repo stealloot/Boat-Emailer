@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Free Web tutorials">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Shopping Headphones</title>
+ <style>
+   *{
+    margin:0;
+	padding:0;
+	box-sizing:border-box;
+   }
+   table{
+    cellpadding:0;
+	cellspacing:0;
+	width:700px;
+	margin:auto;
+	border:1px solid grey;
+   }
+   #logo{
+    width:100%;
+	height:400px;
+	text-align:center;
+	background-image:url("image/pic1.jpg");
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:cover;
+	color:#00cc99;
+	position:relative;
+   }
+   #logo td{
+    width:100%;
+	top:0;
+	position:absolute;
+   }
+   #logo img{
+    width:30%;
+   }
+	#home{
+	 width:100%;
+	 text-align:center;
+	 background-color:#00264d;
+	 color:white;
+	}
+	#home td{
+	 padding:1rem;
+	 width:100%;
+	}
+	#home h3{
+	 padding:1rem 0rem;
+	}
+	#home p{
+	 font-size:14px;
+	 line-height:1.5;
+	}
+	#home h4{
+    padding:2rem 0rem 1rem;
+   }
+   #home h4 a{
+    border:2px solid white;
+	text-decoration:none;
+	padding:10px 25px;
+	background-color:transparent;
+	color:white;
+	}
+	#speaker{
+	 display:flex;
+	 align-items:center;
+	 justify-content:space-between;
+	 width:100%;
+	}
+	#speaker td{
+	 width:50%;
+	 padding:1rem 0rem;
+	}
+	#speaker img{
+	 width:100%;
+	 padding-bottom:10px;
+	}
+    #speaker .td-1{
+	 padding-right:10px;
+	}
+	#speaker .td-2{
+	 padding-left:10px;
+	}
+	#speaker h3{
+	 text-align:center;
+	 font-family:Arial;
+	}
+	#speaker h2{
+	 text-align:center;
+	 padding:1rem 0rem;
+	}
+	#speaker h2 span{
+	 color:#999999;
+	 padding-left:10px;
+	 text-decoration:line-through;
+	}
+	#speaker p{
+	 text-align:center;
+	 padding:0rem 1rem;
+	 line-height:1.5;
+	 font-size:13px;
+	}
+	#speaker h4{
+	text-align:center;
+	padding:1rem 0rem;
+	}
+	#speaker h4 a{
+    border:2px solid #999999;
+	text-decoration:none;
+	padding:8px 35px;
+	background-color:transparent;
+	color:black;
+	font-size:14px;
+	font-family:Verdana;
+	}
+	#airpod{
+	 display:flex;
+	 align-items:center;
+	 justify-content:space-between;
+	 width:100%;
+	}
+	#airpod td{
+	 width:50%;
+	 padding:1rem 0rem;
+	}
+	#airpod img{
+	 width:100%;
+	 padding-bottom:10px;
+	}
+    #airpod .td-1{
+	 padding-right:10px;
+	}
+	#airpod .td-2{
+	 padding-left:10px;
+	}
+	#airpod h3{
+	 text-align:center;
+	 font-family:Arial;
+	}
+	#airpod h2{
+	 text-align:center;
+	 padding:1rem 0rem;
+	}
+	#airpod h2 span{
+	 color:#999999;
+	 padding-left:10px;
+	 text-decoration:line-through;
+	}
+	#airpod p{
+	 text-align:center;
+	 padding:0rem 1rem;
+	 line-height:1.5;
+	 font-size:13px;
+	}
+	#airpod h4{
+	text-align:center;
+	padding:1rem 0rem;
+	}
+	#airpod h4 a{
+    border:2px solid #999999;
+	text-decoration:none;
+	padding:8px 35px;
+	background-color:transparent;
+	color:black;
+	font-size:14px;
+	font-family:Verdana;
+	}
+	#headphone h2{
+	 text-align:center;
+	 font-family:arial;
+	 padding:1rem;
+	}
+	#headphone p{
+	 text-align:center;
+	 line-height:1.5;
+	 padding:0rem 1rem 1rem;
+	}
+	#headphone .headphone{
+	 display:flex;
+	 align-items:center;
+	 justify-content:space-between;
+	 width:100%;
+	}
+	.headphone .items{
+	 width:33.33%;
+	 padding:1rem;
+	 text-align:center;
+	}
+	.items img{
+	 width:100%;
+	}
+	.items h3{
+	 font-family:arial;
+	 padding:1rem 1rem;
+	}
+	.items p{
+	 line-height:1.6;
+	 color:#808080;
+	}
+	#headphone h4{
+	text-align:center;
+	padding:1rem 1rem 1.5rem;
+	}
+	#headphone h4 a{
+    border:2px solid #999999;
+	text-decoration:none;
+	padding:8px 35px;
+	background-color:transparent;
+	color:#666666;
+	font-size:14px;
+	font-family:Verdana;
+	}
+	#contact{
+	 background-color:#00264d;
+	 color:white;
+	 text-align:center;
+	}
+	#contact h3{
+	 padding:1rem;
+	 font-family:Verdana;
+	}
+	#contact .contact{
+	 display:flex;
+	 align-items:center;
+	 justify-content:center;
+	 width:100%;
+	}
+	.contact img{
+	 width:40px;
+	 padding:1rem 5px; 
+	}
+	#contact p{
+	 padding:1rem 3rem;
+	 line-height:1.6;
+	 color:#808080;
+	}
+	
+	@media (max-width:500px){
+	     table{
+		  width:100vw;
+		 }
+		  #logo img{
+         width:40%;
+      }
+	    #speaker{
+	  flex-direction:column;
+	}
+	#speaker td{
+	 width:100%;
+	}
+	#speaker img{
+	 width:70%;
+	 margin:1rem auto;
+	 display:block;
+	 } 
+	 #airpod{
+	  flex-direction:column;
+	}
+	#airpod td{
+	 width:100%;
+	}
+	#airpod img{
+	 width:70%;
+	 margin:1rem auto;
+	 display:block;
+	 } 
+	 
+	#headphone .headphone{
+	 flex-direction:column;
+	}
+	.headphone .items{
+	 width:100%;
+	}
+	.items img{
+	 width:70%;
+	 margin:1rem auto;
+	 display:block;
+	}
+	.contact img{
+	 width:40px;
+	 padding:1rem 5px; 
+	}
+	}
+ </style>
+ </head>
+ 
+ <body>
+ <table>
+   <tr id="logo">
+     <td><img src="image/boat.png">
+         
+	 </td> 
+   </tr>
+   <tr id="home">
+     <td><h3>25% OFF SPEAKERS </h3> 
+	     <P>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </P>
+	      <h4><a href="#">Shop Now</a></h4> 
+	 </td>
+   </tr>
+   <tr id="speaker">
+     <td class="td-1"><img src="image/speaker1.png">
+         <h3>Smart speaker</h3>
+		 <h2>$57 <span>$76</span></h2>
+		 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</p>
+		 <h4><a href="#">Shop Now</a></h4>
+	 </td>
+	 <td class="td-2"><img src="image/speaker2.png">
+         <h3>Smart speaker</h3>
+		 <h2>$42 <span>$56</span></h2>
+		 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</p>
+		 <h4><a href="#">Shop Now</a></h4>
+	 </td>
+   </tr>
+   <tr id="airpod">
+     <td class="td-1"><img src="image/airpods1.jpg">
+         <h3>Headphones Airpods</h3>
+		 <h2>$42 <span>$71</span></h2>
+		 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</p>
+		 <h4><a href="#">Shop Now</a></h4>
+	 </td>
+	 <td class="td-2"><img src="image/airpods2.jpg">
+         <h3>Headphones Airpods</h3>
+		 <h2>$57 <span>$69</span></h2>
+		 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</p>
+		 <h4><a href="#">Shop Now</a></h4> 
+	 </td>
+   </tr>
+   <tr id="headphone">
+     <td><hr style="width:80%; height:2px; margin:auto;"><h2>Let Dad know he is your hero </h2> 
+	    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br/> sed do eiusmod tempo incididunt ut labore et dolore magna aliqua.</p>
+	  <div class="headphone">
+	    <div class="items">
+		    <img src="image/headphone1.png">
+			<h3>Headphones</h3>
+			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy </p>
+		</div>
+		<div class="items">
+		    <img src="image/headphone2.png">
+			<h3>Headphones</h3>
+			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy </p>
+		</div>
+		<div class="items">
+		    <img src="image/headphone3.png">
+			<h3>Headphones</h3>
+			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy </p>
+		</div>
+	  </div>
+	    <h4><a href="#">BROWSE ALL OFFERS</a></h4>
+	 </td>
+   </tr>
+   <tr id="contact">
+     <td><h3>Follow us on</h3>
+         <div class="contact">
+		    <a href="#"><img src="image/facebook.png"></a>
+			<a href="#"><img src="image/twitter.png"></a>
+			<a href="#"><img src="image/instagram.png"></a>
+			<a href="#"><img src="image/youtube.png"></a>
+			<a href="#"><img src="image/linkedin.png"></a>
+		 </div>
+		 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.<br/> <br/>
+		   You are receiving this email because you signed up to receive promotions and offers from us. If you wash to unsubscribe please click here.</p> 
+	 </td>
+   </tr>
+ </table>   
+ </body>
+ 
+ </html>
